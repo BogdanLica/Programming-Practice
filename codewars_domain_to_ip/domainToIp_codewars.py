@@ -1,15 +1,4 @@
-def f(URL):
-    sum=0
-    i=1
-    list=[]
-    for character in URL:
-        sum+=ord(character)
-    print(sum)
-    while i<5:
-        list.append(i*sum%256)
-        i=i+1
-    return list
-
+def f(U):return[i*sum(map(ord,U))%256for i in range(1,5)]
 
 def main():
     URL='www.codewars.com'
